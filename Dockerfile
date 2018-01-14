@@ -2,7 +2,7 @@ FROM continuumio/anaconda3
 
 RUN apt-get update && apt-get install --assume-yes apt-utils
 RUN apt install htop
-conda install -c anaconda numpy
+RUN conda install -c anaconda numpy
 RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
 
